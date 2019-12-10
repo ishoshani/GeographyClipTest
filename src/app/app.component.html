@@ -4,10 +4,14 @@
     Welcome to {{ title }}!
   </h1>
 </div>
+<p> this app demonstrates using the turf.js difference method to figure out the percentage of coverage.<p>
+<p> the tests starts with a 100 by 100 meter square located at LatLon coordinates 0,0. This means that the total area is about 10,000 meter squared plus a few for curvature given we get these from LatLonSphericals</p>
+<p> below you can define the parameters for a new rectangle that will represent area covered,(currently centered at 0,0). Once defined, you can click calc to find the difference left as well as the ratio currently covered</p>
+<p> You can define multiple shapes in sequence to see how much is covered when they are combined. Hit reset shape to remove all coverage and restore the original area</p>
 <p> total area is : {{ totalArea }}</p>
 <p> small area is : {{ smallArea }}</p>
 <p> difference is : {{ differenceArea }}</p>
-<p> ratio is {{ ratio }} </p>
+<p> ratio covered is {{ ratio }} </p>
 <p><label>major axis of clip</label><input type="text" class="form-control" [(ngModel)]="inputMajorAxisMeters"/></p>
 <p><label>minor axis of clip</label><input type="text" class="form-control" [(ngModel)]="inputMinorAxisMeters"/></p>
 <p><label> orientation </label><input type="text" class="form-control" [(ngModel)]="orientation"/></p>
