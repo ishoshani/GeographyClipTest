@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<p> total area is : {{ totalArea }}</p>
+<p> small area is : {{ smallArea }}</p>
+<p> difference is : {{ differenceArea }}</p>
+<p> ratio is {{ ratio }} </p>
+<p><label>major axis of clip</label><input type="text" class="form-control" [(ngModel)]="inputMajorAxisMeters"/></p>
+<p><label>minor axis of clip</label><input type="text" class="form-control" [(ngModel)]="inputMinorAxisMeters"/></p>
+<p><label> orientation </label><input type="text" class="form-control" [(ngModel)]="orientation"/></p>
+<button (click)="calcDifference()">calc new difference</button>
+<button (click)="resetShape()">reset shape</button>
+
